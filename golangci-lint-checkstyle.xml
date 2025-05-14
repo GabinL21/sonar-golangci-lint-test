@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<checkstyle version="5.0">
+  <file name="SelfAssignement.go">
+    <error column="3" line="7" message="assign: self-assignment of name to name" severity="error" source="govet"></error>
+    <error column="3" line="9" message="assign: self-assignment of user.name to user.name" severity="error" source="govet"></error>
+    <error column="20" line="4" message="field name is unused" severity="error" source="unused"></error>
+    <error column="19" line="6" message="func (*User).rename is unused" severity="error" source="unused"></error>
+  </file>
+  <file name="Unsecure.go">
+    <error column="5" line="4" message="G501: Blocklisted import crypto/md5: weak cryptographic primitive" severity="error" source="gosec"></error>
+    <error column="13" line="11" message="G401: Use of weak cryptographic primitive" severity="error" source="gosec"></error>
+    <error column="6" line="9" message="func main is unused" severity="error" source="unused"></error>
+  </file>
+</checkstyle>
